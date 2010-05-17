@@ -1,0 +1,27 @@
+Image Processing.
+
+Processes a directory of images, turning an un-ordered mess, into a nice, date
+ordered mess. This was borne of having one too many "Collections" of photos
+stored randomly. You need them all in one place right?
+
+-- Requirments;
+You'll need PHP installed on whatever machine you're going to run this on. 5.2
+at a minimum.
+
+-- Usage:
+Simply modify process.php, setting the inputdir, output dir and any of the below:
+
+setDirYear(): Will set "Year" directories (/2010)
+setDirMonth(): Will add "Month" directories (/2010/05)
+setDirDay(): will set day directories (/2010/05/23)
+setImageTypes(): is an array of image extensions you want to use.
+setDateStyle(): Use the php date() method of dates style (Y-m-d)
+
+
+Then, run it like so:
+php -f ./process.php
+
+-- Warranties
+None. This is an experimental script, if this deletes, or otherwise breaks
+your image library, don't come running to me. This can be a destructive
+script. USE WITH CAUTION
